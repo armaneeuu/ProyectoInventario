@@ -1,0 +1,60 @@
+@model ProyectoInventario.Models.Product
+
+@{
+    ViewData["Title"] = "Crear producto";
+}
+
+<div class="seccion-titulo">
+    <h5 class="titulo-prim">@ViewData["Title"]</h5>
+</div>
+<div class="crud-producto">
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Nombre" class="control-label">Nombre</label>
+            <input asp-for="Nombre" class="form-control" placeholder="Escriba el nombre del producto" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Descripcion" class="control-label">Descripción</label>
+            <textarea asp-for="Descripcion" class="form-control" rows="2"
+                placeholder="Escriba la descripción del producto"></textarea>
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Stock" class="control-label">Stock</label>
+            <input asp-for="Stock" class="form-control" placeholder="Escriba el precio del producto" />
+            <span asp-validation-for="Stock" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Categoria" class="control-label"></label>
+                <input asp-for="Categoria" class="form-control" />
+                <span asp-validation-for="Categoria" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+        <div class="form-group" style="margin-bottom: -2px;">
+            <label asp-for="Imagen" class="control-label">Imagen</label>
+        </div>
+        <div class="form-group">
+            <input type="file" id="real-file" hidden="hidden" asp-for="Imagen" name="upload" accept="application/jpg"
+                required />
+            <button type="button" id="custom-button">Cargar Imagen</button>
+            <span id="custom-text">No selecciono ningun archivo.</span>
+        </div>
+        <div class="form-group" style="text-align: center;">
+            <input type="submit" value="Crear Producto" class="btn btn-prim" />
+        </div>
+    </form>
+</div>
+
+<div style="text-align: center;">
+    <a class="btn-prim" asp-action="Index">Regresar al catálogo</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

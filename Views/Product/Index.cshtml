@@ -1,0 +1,44 @@
+@model IEnumerable<ProyectoInventario.Models.Product>
+
+@{
+    ViewData["Title"] = "Catalogo";
+}
+
+<div class="seccion-titulo">
+    <h5 class="titulo-prim">@ViewData["Title"]</h5>
+</div>
+<div class="container-buscar">
+    <form>
+        <input class="form-control buscar-producto" type="search" placeholder="Buscar" aria-label="Search"
+            value=" @ViewData["Getemployeedetails"]" name="Searchpro">
+        <button class="btn btn-prim" type="submit">Buscar</button>
+    </form>
+</div>
+<br>
+<div class="contenedor-catalogo">
+    @foreach (var item in Model)
+    {
+        if (item.Status != "ELIMINADO")
+        {
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-img-actions">
+                        <img class="img-catalogo" src="@Url.ActionLink("MostrarImagen","Catalogo",new { id=item.Id })"
+                    alt="@item.ImagenName" />
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="nom-producto">@Html.DisplayFor(modelItem => item.Nombre)</h5>
+                    <p class="precio-producto">@Html.DisplayFor(modelItem => item.Stock)</p>
+                    <div class="catalogo-btn">
+                        <a class="btn btn-editar" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                        <a class="btn btn-eliminar" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                    </div>
+                    <div class="form-group mt-3">
+                        <a class="btn btn-prim form-control" asp-action="Details" asp-route-id="@item.Id">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
