@@ -1,0 +1,9 @@
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.csproj.AssemblyReference.cache
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.AssemblyInfoInputs.cache
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.AssemblyInfo.cs
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.csproj.CoreCompileInputs.cache
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.RazorAssemblyInfo.cache
+C:\Users\Armando\Documents\Proyectos versiones\ProyectoInventario\obj\Debug\net6.0\ProyectoInventario.RazorAssemblyInfo.cs
