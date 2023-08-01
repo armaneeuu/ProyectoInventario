@@ -1,0 +1,46 @@
+@model IEnumerable<ProyectoInventario.Models.Product>
+
+@{
+    ViewData["Title"] = "Catalogo";  
+}
+
+<section id="catalogue" class="catalogue section-bg">
+
+  <div class="container">
+    <div class="section-title">
+          <h2 data-aos="fade-in">Insumos</h2>
+        </div>
+    <h1>@ViewData["Message"]</h1>
+    <div class="row">
+      <div class="col">
+        <div id="products" class="mb-3">
+          <div class="row">
+            @foreach (var item in Model) {
+            <div class="col-lg-4 catalogue-item filter-app">
+            <div style="text-align:center;" >
+                    <img class="card-img-top" height="200"
+                       src="@Url.ActionLink("MostrarImagen","Catalogo",new { id=item.Id })"
+                    alt="@item.ImagenName"  />
+                  </div>
+              
+                <div class="catalogo" style="height: 200px;background-color: white;">
+				<div style="text-align:center;" class="card-body" >
+                  <h5 class="card-title">@Html.DisplayFor(modelItem => item.Nombre)</h5>
+                  <p class="card-text">Stock: @Html.DisplayFor(modelItem => item.Stock)</p>
+                  <div style="margin-top: 30px;">
+            
+						<div class="col" style="text-align: center;">
+                  <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detalle</a>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            }
+
+            </section>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>

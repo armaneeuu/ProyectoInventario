@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EUIJN7yuHAdxGfWXMhnyKMz5bD/juXQsNOOFPwZQTq2rMj79PhuWnHyUSrEPQd3tKG2GUYt/3T0PfJktUmWd8g==",
+  "dgSpecHash": "7HRVWX8lYDjqnj0+c5i/jqXT/DPyDy24Aj4JlngkYxRgqdKr7u14xoqmdqqGIWp9wU4lvmRIDJHBIab2PlE/mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj",
+  "projectFilePath": "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Armando\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Armando\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

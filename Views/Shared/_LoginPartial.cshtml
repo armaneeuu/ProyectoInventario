@@ -6,6 +6,12 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Catalogo" asp-action="Index">Insumos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Catalogo" asp-action="Index2">Calzados</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Catalogo</a>
         </li>
      <li class="nav-item">

@@ -1,0 +1,70 @@
+@model ProyectoInventario.Models.Product
+
+@{
+
+    ViewData["Title"] = "Details";
+}
+<style>
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    
+
+    .font20 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .justificado {
+        text-align: justify;
+        text- justify: auto;
+    }
+
+    .checked {
+        color: orange;
+    }
+</style>
+
+<section id="catalogue" class="catalogue section-bg">
+<div class="container">
+<div class="section-title">
+          <h2 data-aos="fade-in">Detalles</h2>
+          
+        </div>
+
+    <div class="card" style="border: none;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" style="height: 500px; width: 100%; "
+                        src="/images/@Html.DisplayFor(model => model.ImagenName)"
+                        alt="@Html.DisplayFor(model => model.ImagenName)" />
+                </div>
+            </div>
+            <div class="col-md-7">
+                <br>
+                <h4 style="text-align: center;" class="colorForm">@Html.DisplayFor(model => model.Nombre)</h4>
+                <hr>
+                <ul class="list-unstyled"></ul>
+                 
+                    <p class="colorForm">@Html.DisplayFor(model => model.Descripcion)</p>
+                    <hr>
+                 
+                 
+                     <h5 class="colorForm">Stock: @Html.DisplayFor(model => model.Stock)</h5>
+                
+                </ul>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

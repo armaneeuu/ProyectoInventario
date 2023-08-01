@@ -21,10 +21,15 @@ namespace ProyectoInventario.Controllers
             _userManager = userManager;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var productos = from o in _context.DataProduct select o;
-            return View(await productos.ToListAsync());
+            var lista = _context.DataProduct.Where(x=>x.Categoria == "I");
+            return View(lista);
+        }
+        public IActionResult Index2()
+        {
+            var lista = _context.DataProduct.Where(x=>x.Categoria == "C");
+            return View(lista);
         }
 
         [HttpGet]
@@ -40,6 +45,15 @@ namespace ProyectoInventario.Controllers
 
         }
         public async Task<IActionResult> Details(int? id)
+        {
+            Product objProduct = await _context.DataProduct.FindAsync(id);
+            if (objProduct == null)
+            {
+                return NotFound();
+            }
+            return View(objProduct);
+        }
+        public async Task<IActionResult> Details2(int? id)
         {
             Product objProduct = await _context.DataProduct.FindAsync(id);
             if (objProduct == null)
