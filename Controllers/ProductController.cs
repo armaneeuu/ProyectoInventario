@@ -23,9 +23,15 @@ namespace ProyectoInventario.Controllers
         }
 
         // GET: Product
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-              return View(await _context.DataProduct.ToListAsync());
+              var lista = _context.DataProduct.Where(x=>x.Categoria == "I");
+            return View(lista);
+        }
+        public IActionResult Index2()
+        {
+              var lista = _context.DataProduct.Where(x=>x.Categoria == "C");
+            return View(lista);
         }
 
         // GET: Product/Details/5

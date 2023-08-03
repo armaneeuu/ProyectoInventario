@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj": {}
+    "C:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj": {
+    "C:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj",
+        "projectUniqueName": "C:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj",
         "projectName": "ProyectoInventario",
-        "projectPath": "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj",
+        "projectPath": "C:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj",
         "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\obj\\",
+        "outputPath": "C:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config"
