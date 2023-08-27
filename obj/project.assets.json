@@ -11473,11 +11473,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj",
+      "projectUniqueName": "c:\\Users\\Armando\\Desktop\\Software\\ProyectoInventario\\ProyectoInventario.csproj",
       "projectName": "ProyectoInventario",
-      "projectPath": "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\ProyectoInventario.csproj",
+      "projectPath": "c:\\Users\\Armando\\Desktop\\Software\\ProyectoInventario\\ProyectoInventario.csproj",
       "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Armando\\Documents\\Proyectos versiones\\ProyectoInventario\\obj\\",
+      "outputPath": "c:\\Users\\Armando\\Desktop\\Software\\ProyectoInventario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config"

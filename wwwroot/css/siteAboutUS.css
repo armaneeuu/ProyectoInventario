@@ -1,0 +1,44 @@
+.caja{
+    background: white;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.caja2{
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.fa-chart-line{
+    font-size: 50px;
+}
+
+.fa-hands-helping{
+    font-size: 50px;
+}
+
+.fa-users{
+    font-size: 50px;
+}
+
+.fa-hand-sparkles{
+    font-size: 50px;
+}
+
+.fa-search{
+    font-size: 50px;
+}
+
+.fa-comment-alt{
+    font-size: 50px;
+}
+
+.fa-hand-paper{
+    font-size: 50px;
+}
