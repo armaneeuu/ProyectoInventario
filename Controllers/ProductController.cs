@@ -61,6 +61,21 @@ namespace ProyectoInventario.Controllers
             {
                 empquery = empquery.Where(x => x.Nombre.Contains(Searchpro));
             }
+            empquery = empquery.Where(x=>x.Categoria == "I");
+            return View(await empquery.AsNoTracking().ToListAsync());
+
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Index2(String Searchpro)
+        {
+            ViewData["Getemployeedetails2"] = Searchpro;
+            var empquery = from x in _context.DataProduct select x;
+            if (!string.IsNullOrEmpty(Searchpro))
+            {
+                empquery = empquery.Where(x => x.Nombre.Contains(Searchpro));
+            }
+            empquery = empquery.Where(x=>x.Categoria == "C");
             return View(await empquery.AsNoTracking().ToListAsync());
 
         }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "swCic/4T7Oj22MwIK7wAl783lJbfr90VVdKSTTAIy6w=",
+  "Hash": "/AGWOp7nNMU8ZEbN/cHi9pkm/CIggzbulbIvNFrIwfQ=",
   "Source": "ProyectoInventario",
   "BasePath": "_content/ProyectoInventario",
   "Mode": "Default",
@@ -1171,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Armando\\Desktop\\Software\\ProyectoInventario\\wwwroot\\js\\code.jquery.com_jquery-3.6.0.min.js",
+      "SourceId": "ProyectoInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Armando\\Desktop\\Software\\ProyectoInventario\\wwwroot\\",
+      "BasePath": "_content/ProyectoInventario",
+      "RelativePath": "js/code.jquery.com_jquery-3.6.0.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\code.jquery.com_jquery-3.6.0.min.js"
     },
     {
       "Identity": "C:\\Users\\Armando\\Desktop\\Software\\ProyectoInventario\\wwwroot\\js\\site.js",

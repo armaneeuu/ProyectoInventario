@@ -13,8 +13,8 @@
         <div class="container-buscar">
     <form>
         <input class="form-control buscar-producto" type="search" placeholder="Buscar" aria-label="Search"
-            value=" @ViewData["Getemployeedetails"]" name="Searchpro">
-        <button class="btn btn-prim" type="submit">Buscar</button>
+            value=" @ViewData["Getemployeedetails2"]" name="Searchpro">
+        <button class="btn btn-primary" type="submit">Buscar</button>
     </form>
 </div>
     <h1>@ViewData["Message"]</h1>
@@ -32,14 +32,14 @@
               
                 <div class="catalogo" style="height: 200px;background-color: white;">
 				<div style="text-align:center;" class="card-body" >
-                  <h5 class="card-title">@Html.DisplayFor(modelItem => item.Nombre)</h5>
-                  <p class="card-text">Stock: @Html.DisplayFor(modelItem => item.Stock)</p>
+                  <h5 class="card-title" style="color: black;">@Html.DisplayFor(modelItem => item.Nombre)</h5>
+                  <p class="card-text" style="color: black;">Stock: @Html.DisplayFor(modelItem => item.Stock)</p>
                   <div style="margin-top: 30px;">
             
 						<div class="col" style="text-align: center;">
-                        <a class="btn btn-editar" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
-                        <a class="btn btn-eliminar" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>    
-                  <a class="btn btn-prim form-control" asp-action="Details" asp-route-id="@item.Id">Detalles</a>
+                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>    
+                  <a class="btn btn-light" asp-action="Details" asp-route-id="@item.Id">Detalles</a>
                 </div>
               </div>
             </div>
